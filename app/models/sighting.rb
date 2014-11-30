@@ -18,9 +18,9 @@ class Sighting < ActiveRecord::Base
     elsif self.region_id == 2
       "Southwest"
     elsif self.region_id == 3
-      "Northeast"
-    else
       "Southeast"
+    else
+      "Northeast"
     end
   end
 end
