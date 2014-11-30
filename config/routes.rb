@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   match('sightings/dates/by_date', {:via =>:post, :to => 'sightings#by_date'})
   match('species/:id', {:via => :delete, :to => 'species#destroy'})
   match('species/:id/sightings/:sighting_id/destroy', {:via => :delete, :to => 'sightings#destroy'})
+  match('regions/new', {:via => :get, :to => 'regions#new'})
+  match('regions', {:via => :post, :to => 'regions#create'})
   match('regions/:region_id', {:via => :get, :to => 'regions#show'})
   match('sightings/region', {:via => :get, :to => 'sightings#show_all'})
   match('sightings/region/:region_id', {:via => :get, :to => 'sightings#show_for_region'})
