@@ -2,7 +2,7 @@
 
 This application lets users create lists of animals and list sightings for each animal.
 
-The app is on [Heroku](http://wildlife-tracker-two.herokuapp.com/).
+The app is on [Heroku](http://wildlife-assesment.herokuapp.com/).
 
 ##Setup
 In your terminal, clone this repo:
@@ -21,6 +21,7 @@ Install all dependencies:
 ```console
 $ bundle install
 ```
+
 Set up the databases on your local machine:
 
 ```console
@@ -30,10 +31,11 @@ $ rake db:migrate
 
 Finally, start the rails server:
 
-```console
-$ rails s
+```console $ rails s
 ```
 The app should be available now at 'localhost:3000'
 
 License
 MIT
+
+By Sean Niesen
