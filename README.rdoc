@@ -1,28 +1,39 @@
-== README
+== Wildlife Tracker
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This application lets users create lists of animals and list sightings for each animal.
 
-Things you may want to cover:
+The app is on [Heroku](http://wildlife-tracker-two.herokuapp.com/).
 
-* Ruby version
+##Setup
+In your terminal, clone this repo:
 
-* System dependencies
+```console
+$ clone https://github.com/seann1/wildlife_tracker_assesment.git
+```
 
-* Configuration
+Install [postgres](http://www.postgresql.org/download/) and start the server:
 
-* Database creation
+```console
+$ postgres
+```
+Install all dependencies:
 
-* Database initialization
+```console
+$ bundle install
+```
+Set up the databases on your local machine:
 
-* How to run the test suite
+```console
+$ rake db:create
+$ rake db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Finally, start the rails server:
 
-* Deployment instructions
+```console
+$ rails s
+```
+The app should be available now at 'localhost:3000'
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+License
+MIT
